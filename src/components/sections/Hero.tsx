@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Eye } from 'lucide-react';
+import { getAssetPath } from '@/lib/utils';
 
 const Hero = () => {
   return (
@@ -79,7 +80,7 @@ const Hero = () => {
                 }}
               >
                 <img 
-                  src="/src/assets/outputs/Portrait_AI_Cropped.png" 
+                  src={getAssetPath("assets/outputs/Portrait_AI_Cropped.png")} 
                   alt="Wilson G. Ponseca - Portfolio"
 
                   style={{

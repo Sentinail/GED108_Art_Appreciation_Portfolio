@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Eye, Camera, PenTool, Globe, Users, MessageSquare, BookOpen, Calendar, Link as LinkIcon, FileText, X, Play, Download } from 'lucide-react';
 import { useState } from 'react';
+import { getAssetPath } from '@/lib/utils';
 
 // Custom Modal Component
 const CustomModal = ({ isOpen, onClose, project }: { isOpen: boolean; onClose: () => void; project: any }) => {
@@ -225,10 +226,10 @@ const Portfolio = () => {
       description: "A visual storytelling project with 4-5 photos documenting my personal journey at Mapúa University, capturing significant moments and experiences.",
       detailedDescription: "This photo essay represents my personal narrative at Mapúa University through visual storytelling. Using 4-5 carefully selected photographs, I documented key moments, challenges, and achievements throughout my academic journey. Each image tells a part of my story, from the first day of classes to meaningful interactions with professors and peers. The project follows professional photo essay guidelines, combining composition, lighting, and narrative flow to create a compelling visual story.",
       category: "photo-essay",
-      image: "/src/assets/outputs/Photo Essay.png",
+      image: getAssetPath("assets/outputs/Photo Essay.png"),
       tags: ["Photography", "Storytelling", "Personal Journey", "Documentary"],
       date: "Quiz 1",
-      link: "/src/assets/outputs/Photo Essay.png",
+      link: getAssetPath("assets/outputs/Photo Essay.png"),
       assignment: "Quiz 1: Photo Essay",
       format: "PNG",
       hasFile: true
@@ -239,10 +240,10 @@ const Portfolio = () => {
       description: "An essay-form insight paper analyzing Dr. Jose Dalisay Jr.'s article, exploring new learnings about the importance of arts in society.",
       detailedDescription: "This insight paper provides a comprehensive analysis of Dr. Jose Dalisay Jr.'s article 'Why the Arts Should Matter.' Through critical reading and reflection, I explored the fundamental role of arts in society, education, and personal development. The paper examines how arts contribute to cultural understanding, emotional intelligence, and creative problem-solving. I reflected on how the article changed my perspective on artistic expression and its relevance in contemporary society, particularly in the Filipino context.",
       category: "cultural-study",
-      image: "/src/assets/outputs/Insight Paper Preview.png",
+      image: getAssetPath("assets/outputs/Insight Paper Preview.png"),
       tags: ["Essay Writing", "Critical Analysis", "Arts Advocacy", "Reflection"],
       date: "Assignment 1",
-      link: "/src/assets/outputs/Insight Paper.pdf",
+      link: getAssetPath("assets/outputs/Insight Paper.pdf"),
       assignment: "Assignment 1: Insight Paper",
       format: "PDF",
       hasFile: true
@@ -253,10 +254,10 @@ const Portfolio = () => {
       description: "A comprehensive visual analysis of a chosen artwork presented as a creative infographic covering description, analysis, interpretation, and evaluation.",
       detailedDescription: "This project involves creating a creative infographic design analyzing a selected artwork through four comprehensive steps: Description (providing essential artwork information and compositional analysis), Analysis (examining elements of art and principles of design), Interpretation (exploring personal emotional responses and artistic messages), and Evaluation (assessing the artwork's effectiveness and contemporary relevance). The infographic includes the original artwork image and demonstrates critical thinking about visual culture and artistic expression.",
       category: "visual-analysis",
-      image: "/src/assets/outputs/Visual Analysis Preview.jpg",
+      image: getAssetPath("assets/outputs/Visual Analysis Preview.jpg"),
       tags: ["Visual Analysis", "Infographic Design", "Art Criticism", "Elements & Principles"],
       date: "Exam 1",
-      link: "/src/assets/outputs/Visual Analyis.pdf",
+      link: getAssetPath("assets/outputs/Visual Analyis.pdf"),
       assignment: "Exam 1: Visual Analysis",
       format: "PDF",
       hasFile: true
@@ -267,10 +268,10 @@ const Portfolio = () => {
       description: "Comprehensive documentation of both F2F and virtual museum visits, exploring art history and creating reflective essays with photo evidence.",
       detailedDescription: "This assignment involved conducting both face-to-face and virtual museum visits to explore various aspects of art history including Western, Asian, and Philippine art traditions. The project resulted in a detailed Museum/Gallery Visit Experience Essay or Video Presentation focusing on meaningful experiences, realizations, and lessons learned. Critical reflection on curatorial choices, cultural narratives, and artistic movements formed the core of this work, supported by photo documentation and evidence including a completed scavenger hunt activity.",
       category: "museum-visit",
-      image: "/src/assets/outputs/Museum Visit Preview.png",
+      image: getAssetPath("assets/outputs/Museum Visit Preview.png"),
       tags: ["Museum Studies", "Art History", "Cultural Documentation", "Reflection"],
       date: "Assignment 2",
-      link: "/src/assets/outputs/Museum Visit.pdf",
+      link: getAssetPath("assets/outputs/Museum Visit.pdf"),
       assignment: "Assignment 2: Museum Visit Experience",
       format: "PDF",
       hasFile: true
@@ -281,10 +282,10 @@ const Portfolio = () => {
       description: "Analysis of artwork from another culture, exploring how art facilitates intercultural understanding and multicultural dialogue.",
       detailedDescription: "This project involved selecting and analyzing a piece of art that effectively captures and teaches about a culture different from my own. Through detailed examination, I explored what the artwork revealed about its cultural context and how it changed my understanding of both myself and others. The analysis addressed the crucial role that art plays in fostering intercultural understanding and building bridges in multicultural societies. The project demonstrates how artistic expression transcends cultural boundaries and promotes global empathy.",
       category: "cultural-study",
-      image: "/src/assets/outputs/Cultural Study Preview.png",
+      image: getAssetPath("assets/outputs/Cultural Study Preview.png"),
       tags: ["Intercultural Studies", "Cultural Analysis", "Global Art", "Multiculturalism"],
       date: "Assignment 3",
-      link: "/src/assets/outputs/Cultural Study.pdf",
+      link: getAssetPath("assets/outputs/Cultural Study.pdf"),
       assignment: "Intercultural Art Understanding",
       format: "PDF",
       hasFile: true
@@ -295,7 +296,7 @@ const Portfolio = () => {
       description: "A 10-minute creative presentation exploring a chosen art movement, its historical context, influential artists, and sociopolitical impact.",
       detailedDescription: "This comprehensive presentation project involved researching and presenting a specific art movement or style through a 10-minute pre-recorded video presentation. The content includes historical background, factors leading to the movement's emergence, socio-political issues of the time, influential artists and their significant works, and prevalent art forms and media. The presentation combines visual elements (PPT/Canva) with engaging narration to provide audiences with a thorough understanding of the chosen art movement's cultural and historical significance.",
       category: "art-talk",
-      image: "/src/assets/outputs/Art Movement Preview.png",
+      image: getAssetPath("assets/outputs/Art Movement Preview.png"),
       tags: ["Art History", "Presentation", "Research", "Art Movements"],
       date: "Assignment 4",
       link: "https://drive.google.com/file/d/1mf9tmN8nU2obU1t-dMQJr3AkQPNrFP7W/view?usp=sharing",
@@ -303,7 +304,7 @@ const Portfolio = () => {
       format: "Video Presentation",
       hasFile: true,
       isVideo: true,
-      downloadLink: "/src/assets/outputs/Art Movement.pdf"
+      downloadLink: getAssetPath("assets/outputs/Art Movement.pdf")
     },
     {
       id: 7,
@@ -311,7 +312,7 @@ const Portfolio = () => {
       description: "Creative appropriation of a notable artwork, analyzing different types of appropriation and contemporary artistic commentary.",
       detailedDescription: "This project involved creating a photo appropriation of a notable painting or sculpture, following a structured 5-slide presentation format. The work includes the original artwork with complete details, my appropriation output, a side-by-side comparison, and a detailed explanation of the appropriation type (subject, object, motif, content, or style appropriation). The project explores contemporary issues, advocacy, and artistic commentary through the lens of appropriation, demonstrating understanding of how artists reinterpret and recontextualize existing works to create new meanings.",
       category: "photo-essay",
-      image: "/src/assets/outputs/Photo Appropriation Preview.png",
+      image: getAssetPath("assets/outputs/Photo Appropriation Preview.png"),
       tags: ["Appropriation", "Contemporary Art", "Critical Commentary", "Artistic Interpretation"],
       date: "Assignment 3",
       link: "https://drive.google.com/file/d/1s5eFwqdiYquJhV85_OLlFq1RaNeXgE-F/view?usp=sharing",
@@ -319,7 +320,7 @@ const Portfolio = () => {
       format: "Video Presentation",
       hasFile: true,
       isVideo: true,
-      downloadLink: "/src/assets/outputs/Photo Appropriation.pdf"
+      downloadLink: getAssetPath("assets/outputs/Photo Appropriation.pdf")
     },
     {
       id: 8,
@@ -327,7 +328,7 @@ const Portfolio = () => {
       description: "A 5-minute video presentation discussing my personal artistic practice and creative journey.",
       detailedDescription: "This artist talk video presentation explores my personal artistic practice and creative journey. The 5-minute presentation covers the art forms I engage with in my life, whether it's watercolor painting, travel photography, dance, theater, calligraphy, singing, or other creative pursuits. The talk provides insight into my artistic process, inspirations, challenges, and how these creative practices have shaped my understanding of art and self-expression. It demonstrates the personal connection between artistic practice and identity formation.",
       category: "art-talk",
-      image: "/src/assets/outputs/Art Talk Preview.png",
+      image: getAssetPath("assets/outputs/Art Talk Preview.png"),
       tags: ["Artist Talk", "Personal Practice", "Creative Process", "Self-Reflection"],
       date: "Quiz 3",
       link: "https://drive.google.com/file/d/19ssigd2z4vx2zwq6z5bfP9jYDczy4xpG/view?usp=drive_link",

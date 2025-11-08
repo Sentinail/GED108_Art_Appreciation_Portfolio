@@ -36,3 +36,9 @@ export const formatDate = (date: string) => {
     month: 'long'
   });
 };
+
+// Asset path utility for handling base URLs in deployment
+export const getAssetPath = (path: string) => {
+  const base = import.meta.env.BASE_URL || '/';
+  return `${base}${path}`.replaceAll('//', '/');
+};
